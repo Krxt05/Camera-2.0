@@ -6,6 +6,23 @@ import CalendarView from './components/CalendarView';
 import { Image, Camera, Sparkles, Instagram } from 'lucide-react';
 import { isWithinInterval, startOfDay } from 'date-fns';
 
+// ------------------------------------------------------------------
+// 🔧 ตั้งค่า GitHub Image URL (CONFIG)
+// 1. นำรูปไปวางใน GitHub Repository ของคุณ
+// 2. คลิกไฟล์รูปใน GitHub > กดปุ่ม "Raw" > copy link address
+// 3. นำส่วนต้นของ Link มาใส่ด้านล่าง (ลบชื่อไฟล์ออก)
+//
+// ตัวอย่าง: "https://raw.githubusercontent.com/ชื่อUser/ชื่อRepo/main/public/images/"
+// ------------------------------------------------------------------
+const GITHUB_BASE_URL = "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/images/";
+
+// ฟังก์ชันช่วยแปลงชื่อไฟล์เป็น URL ของ GitHub
+const getImageUrl = (path: string) => {
+  if (!path) return "";
+  if (path.startsWith("http")) return path; // ถ้าเป็น URL อยู่แล้ว (เช่น Unsplash) ให้ใช้เลย
+  return `${GITHUB_BASE_URL}${path}`; // ถ้าเป็นชื่อไฟล์ ให้ต่อท้าย GitHub URL
+};
+
 // Constants for Models
 const MODELS: CameraModel[] = [
   {
@@ -14,9 +31,9 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXY 10s",
     heroImage: "https://i.ebayimg.com/images/g/jtoAAOSwWH9m6YaC/s-l1600.webp",
     moodImages: [
-      "10s_1.jpg",
-      "10s_2.jpg",
-      "10s_3.jpg"
+      getImageUrl("https://i.postimg.cc/XNZcxGMx/10s-1.jpg"),
+      getImageUrl("https://i.postimg.cc/PfLzKpGV/10s-2.jpg"),
+      getImageUrl("https://i.postimg.cc/xjkygJrs/10s-3.jpg")
     ]
   },
   {
@@ -25,7 +42,9 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXY 930 IS",
     heroImage: "https://m.media-amazon.com/images/I/41F0pIRAlYL._AC_UF1000,1000_QL80_.jpg",
     moodImages: [
-      "",
+      // ตัวอย่างการใช้รูปจากเว็บอื่นผสมกัน
+      getImageUrl("https://images.unsplash.com/photo-1552168324-d612d77725e3?q=80&w=800&auto=format&fit=crop"),
+      getImageUrl("https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?q=80&w=800&auto=format&fit=crop")
     ]
   }
 ];
@@ -91,6 +110,10 @@ const App: React.FC = () => {
                         src={currentModel.heroImage} 
                         alt={currentModel.fullName} 
                         className="w-full h-full object-cover transform scale-110 transition duration-700 hover:scale-125"
+                        onError={(e) => {
+                           const target = e.target as HTMLImageElement;
+                           target.src = "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800&auto=format&fit=crop";
+                        }}
                     />
                     {/* Status Badge */}
                     <div className={`
@@ -147,6 +170,13 @@ const App: React.FC = () => {
                             src={img} 
                             alt={`Mood ${idx}`} 
                             className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+                            onError={(e) => {
+                                // Fallback image if GitHub link is broken or not set yet
+                                const target = e.target as HTMLImageElement;
+                                if (!target.src.includes('unsplash')) {
+                                    target.src = 'https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=800&auto=format&fit=crop';
+                                }
+                            }}
                         />
                     </div>
                 ))}
