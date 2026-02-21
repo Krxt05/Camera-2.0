@@ -39,7 +39,7 @@ const MODELS: CameraModel[] = [
     id: "Canon IXUS 185",
     shortName: "IXUS 185",
     fullName: "Canon IXUS 185",
-    heroImage: "https://www.photographyblog.com/reviews/canon_ixus_185_review", // 
+    heroImage: "https://www.photographyblog.com/uploads/entryImages/_1280xAUTO_crop_center-center_none/canon_ixus_185.jpg", // 
     moodImages: [
       ""
     ]
