@@ -39,11 +39,9 @@ const MODELS: CameraModel[] = [
     id: "Canon IXUS 185",
     shortName: "IXUS 185",
     fullName: "Canon IXUS 185",
-    heroImage: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600", // ⚠️ อย่าลืมเปลี่ยนเป็นลิงก์รูปกล้อง IXUS 185 ของร้านนะครับ
+    heroImage: "https://www.photographyblog.com/reviews/canon_ixus_185_review", // 
     moodImages: [
-      "https://images.unsplash.com/photo-1520607162513-77705e685727?w=400", // ⚠️ รูปตัวอย่างโทนภาพที่ 1
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400", // ⚠️ รูปตัวอย่างโทนภาพที่ 2
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400"  // ⚠️ รูปตัวอย่างโทนภาพที่ 3
+      ""
     ]
   }
 ];
