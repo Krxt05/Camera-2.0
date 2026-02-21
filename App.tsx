@@ -32,9 +32,9 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXY 930 IS",
     heroImage: "https://m.media-amazon.com/images/I/41F0pIRAlYL._AC_UF1000,1000_QL80_.jpg",
     moodImages: [
-      "https://i.postimg.cc/HkNXczq2/LINE-ALBUM-930is-260221-1.jpg"
-      "https://i.postimg.cc/K8WBkf65/LINE-ALBUM-930is-260221-2.jpg"
-      "https://i.postimg.cc/BnzHLprp/LINE-ALBUM-930is-260221-3.jpg"
+      "https://i.postimg.cc/HkNXczq2/LINE-ALBUM-930is-260221-1.jpg",
+      "https://i.postimg.cc/K8WBkf65/LINE-ALBUM-930is-260221-2.jpg",
+      "https://i.postimg.cc/BnzHLprp/LINE-ALBUM-930is-260221-3.jpg",
       "https://i.postimg.cc/4x0V7PD9/LINE-ALBUM-930is-260221-4.jpg"
     ]
   },
