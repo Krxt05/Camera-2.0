@@ -32,7 +32,10 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXY 930 IS",
     heroImage: "https://m.media-amazon.com/images/I/41F0pIRAlYL._AC_UF1000,1000_QL80_.jpg",
     moodImages: [
-      ""
+      "https://i.postimg.cc/HkNXczq2/LINE-ALBUM-930is-260221-1.jpg"
+      "https://i.postimg.cc/K8WBkf65/LINE-ALBUM-930is-260221-2.jpg"
+      "https://i.postimg.cc/BnzHLprp/LINE-ALBUM-930is-260221-3.jpg"
+      "https://i.postimg.cc/4x0V7PD9/LINE-ALBUM-930is-260221-4.jpg"
     ]
   },
   {
@@ -41,7 +44,10 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXUS 185",
     heroImage: "https://www.photographyblog.com/uploads/entryImages/_1280xAUTO_crop_center-center_none/canon_ixus_185.jpg", // 
     moodImages: [
-      ""
+      "https://i.postimg.cc/44cLJ7hp/LINE-ALBUM-Ixus-185-260221-6.jpg",
+      "https://i.postimg.cc/pVjG2hnF/LINE-ALBUM-Ixus-185-260221-7.jpg",
+      "https://i.postimg.cc/CK4rpWZW/LINE-ALBUM-Ixus-185-260221-4.jpg",
+      "https://i.postimg.cc/8CGX315Q/LINE-ALBUM-Ixus-185-260221-5.jpg"
     ]
   }
 ];
