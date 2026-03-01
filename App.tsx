@@ -32,9 +32,9 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXY 30s",
     heroImage: "https://cdnyauction-pctr.buyee.jp/i/auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0105/user/b3dfea10afb19e6a79e79cb1a6d17efe5f89b5cb70f0a0dd12a8b97926ecc9f6/i-img500x308-17472100024467qlac0e35.jpg?pri=l&w=300&h=300&up=0&nf_src=sy&nf_path=images/auc/pc/top/image/1.0.3/na_170x170.png&nf_st=200",
     moodImages: [
-      "https://i.postimg.cc/XNZcxGMx/10s-1.jpg",
-      "https://i.postimg.cc/PfLzKpGV/10s-2.jpg",
-      "https://i.postimg.cc/xjkygJrs/10s-3.jpg"
+      "",
+      "",
+      ""
     ]
   },
   {
@@ -48,11 +48,22 @@ const MODELS: CameraModel[] = [
       "https://i.postimg.cc/BnzHLprp/LINE-ALBUM-930is-260221-3.jpg",
       "https://i.postimg.cc/4x0V7PD9/LINE-ALBUM-930is-260221-4.jpg"
     ]
+  },{
+    id: "Canon IXY 910 IS",
+    shortName: "IXY 910 IS",
+    fullName: "Canon IXY 910 IS",
+    heroImage: "https://img1.kakaku.k-img.com/images/smartphone/icv/l_00500211163.jpg",  
+    moodImages: [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
-    id: "Canon IXUS 185",
-    shortName: "IXUS 185",
-    fullName: "Canon IXUS 185",
+    id: "Canon IXY 200",
+    shortName: "IXY 200",
+    fullName: "Canon IXY 200",
     heroImage: "https://www.photographyblog.com/uploads/entryImages/_1280xAUTO_crop_center-center_none/canon_ixus_185.jpg", // 
     moodImages: [
       "https://i.postimg.cc/44cLJ7hp/LINE-ALBUM-Ixus-185-260221-6.jpg",
