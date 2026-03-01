@@ -26,6 +26,17 @@ const MODELS: CameraModel[] = [
       "https://i.postimg.cc/xjkygJrs/10s-3.jpg"
     ]
   },
+    {
+    id: "Canon IXY 30s",
+    shortName: "IXY 30s",
+    fullName: "Canon IXY 30s",
+    heroImage: "https://cdnyauction-pctr.buyee.jp/i/auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0105/user/b3dfea10afb19e6a79e79cb1a6d17efe5f89b5cb70f0a0dd12a8b97926ecc9f6/i-img500x308-17472100024467qlac0e35.jpg?pri=l&w=300&h=300&up=0&nf_src=sy&nf_path=images/auc/pc/top/image/1.0.3/na_170x170.png&nf_st=200",
+    moodImages: [
+      "https://i.postimg.cc/XNZcxGMx/10s-1.jpg",
+      "https://i.postimg.cc/PfLzKpGV/10s-2.jpg",
+      "https://i.postimg.cc/xjkygJrs/10s-3.jpg"
+    ]
+  },
   {
     id: "Canon IXY 930 IS",
     shortName: "IXY 930 IS",
