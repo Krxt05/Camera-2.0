@@ -32,9 +32,9 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXY 30s",
     heroImage: "https://cdnyauction-pctr.buyee.jp/i/auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0105/user/b3dfea10afb19e6a79e79cb1a6d17efe5f89b5cb70f0a0dd12a8b97926ecc9f6/i-img500x308-17472100024467qlac0e35.jpg?pri=l&w=300&h=300&up=0&nf_src=sy&nf_path=images/auc/pc/top/image/1.0.3/na_170x170.png&nf_st=200",
     moodImages: [
-      "",
-      "",
-      ""
+      "https://i.postimg.cc/cCYc7V5s/LINE-ALBUM-30s-260301-1.jpg",
+      "https://i.postimg.cc/BbDC5dwb/LINE-ALBUM-30s-260301-2.jpg",
+      "https://i.postimg.cc/Zn3LP1D0/LINE-ALBUM-910is-260301-1.jpg"
     ]
   },
   {
@@ -54,10 +54,10 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXY 910 IS",
     heroImage: "https://img1.kakaku.k-img.com/images/smartphone/icv/l_00500211163.jpg",  
     moodImages: [
-      "",
-      "",
-      "",
-      ""
+      "https://i.postimg.cc/mkRPqJgk/LINE-ALBUM-910is-260301-1.jpg",
+      "https://i.postimg.cc/kG92Zzgt/LINE-ALBUM-910is-260301-5.jpg",
+      "https://i.postimg.cc/sxyM8qgB/LINE-ALBUM-910is-260301-2.jpg",
+      "https://i.postimg.cc/FzmYq8Hd/LINE-ALBUM-910is-260301-3.jpg"
     ]
   },
   {
