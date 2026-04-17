@@ -52,7 +52,7 @@ const MODELS: CameraModel[] = [
     id: "Canon IXY 910 IS",
     shortName: "IXY 910 IS",
     fullName: "Canon IXY 910 IS",
-    heroImage: "https://img1.kakaku.k-img.com/images/smartphone/icv/l_00500211163.jpg",  
+    heroImage: "https://global.canon/ja/c-museum/wp-content/uploads/2015/05/dcc550_b.jpg",  
     moodImages: [
       "https://i.postimg.cc/mkRPqJgk/LINE-ALBUM-910is-260301-1.jpg",
       "https://i.postimg.cc/kG92Zzgt/LINE-ALBUM-910is-260301-5.jpg",
