@@ -61,9 +61,9 @@ const MODELS: CameraModel[] = [
     ]
   },
   {
-    id: "Canon IXY 200",
-    shortName: "IXY 200",
-    fullName: "Canon IXY 200",
+    id: "Canon IXY 200 (IXUS 185)",
+    shortName: "IXY 200 (IXUS 185)",
+    fullName: "Canon IXY 200 (IXUS 185)",
     heroImage: "https://www.photographyblog.com/uploads/entryImages/_1280xAUTO_crop_center-center_none/canon_ixus_185.jpg", // 
     moodImages: [
       "https://i.postimg.cc/44cLJ7hp/LINE-ALBUM-Ixus-185-260221-6.jpg",
