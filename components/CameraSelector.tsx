@@ -10,7 +10,7 @@ interface CameraSelectorProps {
 const CameraSelector: React.FC<CameraSelectorProps> = ({ models, selectedId, onSelect }) => {
   // ตัดแบ่ง Array เป็น 2 แถว
   const topRow = models.slice(0, 3); // 3 รุ่นแรก (10s, 30s, 930 IS)
-  const bottomRow = models.slice(3); // รุ่นที่เหลือ (910 IS, 200)
+  const bottomRow = models.slice(3); // รุ่นที่เหลือ (510 IS, 910 IS, 200)
 
   return (
     <div className="flex flex-col gap-3 py-2 px-2 w-full">

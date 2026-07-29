@@ -10,7 +10,7 @@ const GITHUB_BASE_URL = "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/
 
 const getImageUrl = (path: string) => {
   if (!path) return "";
-  if (path.startsWith("http")) return path;
+  if (path.startsWith("http") || path.startsWith("/")) return path;
   return `${GITHUB_BASE_URL}${path}`;
 };
 
@@ -21,16 +21,16 @@ const MODELS: CameraModel[] = [
     fullName: "Canon IXY 10s",
     heroImage: "https://i.ebayimg.com/images/g/jtoAAOSwWH9m6YaC/s-l1600.webp",
     moodImages: [
-      "https://i.postimg.cc/XNZcxGMx/10s-1.jpg",
-      "https://i.postimg.cc/PfLzKpGV/10s-2.jpg",
-      "https://i.postimg.cc/xjkygJrs/10s-3.jpg"
+      "/mood/ixy10s-1.jpg",
+      "/mood/ixy10s-2.jpg",
+      "/mood/ixy10s-3.jpg"
     ]
   },
     {
     id: "Canon IXY 30s",
     shortName: "IXY 30s",
     fullName: "Canon IXY 30s",
-    heroImage: "https://cdnyauction-pctr.buyee.jp/i/auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0105/user/b3dfea10afb19e6a79e79cb1a6d17efe5f89b5cb70f0a0dd12a8b97926ecc9f6/i-img500x308-17472100024467qlac0e35.jpg?pri=l&w=300&h=300&up=0&nf_src=sy&nf_path=images/auc/pc/top/image/1.0.3/na_170x170.png&nf_st=200",
+    heroImage: "/cameras/ixy30s.jpeg",
     moodImages: [
       "https://i.postimg.cc/cCYc7V5s/LINE-ALBUM-30s-260301-1.jpg",
       "https://i.postimg.cc/BbDC5dwb/LINE-ALBUM-30s-260301-2.jpg",
@@ -48,6 +48,13 @@ const MODELS: CameraModel[] = [
       "https://i.postimg.cc/BnzHLprp/LINE-ALBUM-930is-260221-3.jpg",
       "https://i.postimg.cc/4x0V7PD9/LINE-ALBUM-930is-260221-4.jpg"
     ]
+  },
+  {
+    id: "Canon IXY 510 IS",
+    shortName: "IXY 510 IS",
+    fullName: "Canon IXY 510 IS",
+    heroImage: "/cameras/ixy510is.png",
+    moodImages: []
   },{
     id: "Canon IXY 910 IS",
     shortName: "IXY 910 IS",
